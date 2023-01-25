@@ -1,0 +1,71 @@
+{{ 'new-hero.css' | asset_url | stylesheet_tag }}
+
+
+<section class="new-hero">
+
+    <div class="hero-parent">
+        {% for item in section.blocks %}
+            <div class="hero-slider">
+                {% if item.hero_img != null %}
+                    {% render 'image', imageSrc: item.hero_img, classes: 'hero_img' %}
+                    {% else %}
+                    {{ 'lifestyle-1' | placeholder_svg_tag: 'hero_img' }}
+                {% endif %}
+
+                <div class="hero-content">
+                    <h2 class="hero-title">{{ item.hero_title }}</h2>
+                    <p class="hero_subtitle">  {{ item.hero_subtitle }} </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "New Hero",
+        "blocks": [
+            {
+                "type": "new-hero",
+                "name": "Hero slide",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "hero_img",
+                        "label": "Image",
+                        "info": "Image size should be 1920x1080px"
+                    },
+                    {
+                        "type": "text",
+                        "id": "hero_title",
+                        "label": "Title",
+                        "info": "Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "hero_subtitle",
+                        "label": "Subtitle",
+                        "info": "Subtitle"
+                    },
+                    {
+                        "type": "text",
+                        "id": "hero_button_text",
+                        "label": "Button Text",
+                        "info": "Button Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "hero_button_link",
+                        "label": "Button Link",
+                        "info": "Button Link"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Hero"
+            }
+        ]
+    }
+{% endschema %}
