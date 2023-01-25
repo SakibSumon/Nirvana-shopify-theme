@@ -1,20 +1,20 @@
 {{ 'new-hero.css' | asset_url | stylesheet_tag }}
 
 
-<section class="new-hero">
+<section class="new-hero page-width">
 
     <div class="hero-parent">
         {% for item in section.blocks %}
             <div class="hero-slider">
-                {% if item.hero_img != null %}
-                    {% render 'image', imageSrc: item.hero_img, classes: 'hero_img' %}
+                {% if item.settings.hero_img != null %}
+                    {% render 'image', imageSrc: item.settings.hero_img, classes: 'hero_img' %}
                     {% else %}
                     {{ 'lifestyle-1' | placeholder_svg_tag: 'hero_img' }}
                 {% endif %}
 
                 <div class="hero-content">
-                    <h2 class="hero-title">{{ item.hero_title }}</h2>
-                    <p class="hero_subtitle">  {{ item.hero_subtitle }} </p>
+                    <h2 class="hero-title">{{ item.settings.hero_title }}</h2>
+                    <p class="hero_subtitle">  {{ item.settings.hero_subtitle }} </p>
                 </div>
             </div>
         {% endfor %}
