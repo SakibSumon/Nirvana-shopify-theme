@@ -2,6 +2,7 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -21,7 +22,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -37,7 +38,6 @@
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -47,13 +47,55 @@
         "show_text_below": false
       }
     },
+    "40c1ac49-7924-499c-ba1f-6364b22360b3": {
+      "type": "new-hero",
+      "blocks": {
+        "ae7789da-2646-4311-8389-0d6cf496f156": {
+          "type": "hero_images",
+          "settings": {
+            "banner_img": "shopify:\/\/shop_images\/Frame_43.png",
+            "hero_title": "Decorate your Home",
+            "hero_subtitle": "Decorate your house",
+            "hero_button_text": "Contact Us",
+            "hero_button_link": "\/"
+          }
+        },
+        "ecaf4417-52d1-4e5f-a927-14ebca36aa68": {
+          "type": "hero_images",
+          "settings": {
+            "banner_img": "shopify:\/\/shop_images\/HERO_main_2_6e4d8f5b-69d4-41fa-9abd-234c6dfa6756_1.webp",
+            "hero_title": "Summer Vibes.",
+            "hero_subtitle": "Decorate your house",
+            "hero_button_text": "Contact Us",
+            "hero_button_link": "\/"
+          }
+        },
+        "ff9ec0aa-1191-416d-8e0d-d9facdc7ff55": {
+          "type": "hero_images",
+          "settings": {
+            "banner_img": "shopify:\/\/shop_images\/silhouetted-couples-look-out-at-a-city-at-night.jpg",
+            "hero_title": "Summer Vibes.",
+            "hero_subtitle": "Decorate your house",
+            "hero_button_text": "Contact Us",
+            "hero_button_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "ae7789da-2646-4311-8389-0d6cf496f156",
+        "ecaf4417-52d1-4e5f-a927-14ebca36aa68",
+        "ff9ec0aa-1191-416d-8e0d-d9facdc7ff55"
+      ],
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
+            "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
         },
@@ -69,6 +111,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -80,17 +124,24 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "full_width": false,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -128,6 +179,7 @@
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -137,8 +189,8 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -192,9 +244,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -202,6 +254,7 @@
   },
   "order": [
     "image_banner",
+    "40c1ac49-7924-499c-ba1f-6364b22360b3",
     "rich_text",
     "featured_collection",
     "collage",
