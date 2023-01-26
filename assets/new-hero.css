@@ -93,3 +93,7 @@
 .hero .flickity-page-dots{
     bottom: 15px;
 }
+
+.hero-btn{
+    padding: 12px 36px;
+}

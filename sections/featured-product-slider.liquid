@@ -1,7 +1,91 @@
-<section class="ft-product">
+{{ 'featured-product-slider.css' | asset_url | stylesheet_tag }}
 
-    <div class="ft-product__container">
-        <div class="ft-prod-div"></div>
-        <div class="ft-prod-div"></div>
+<section class="ft-product section-margin">
+    <div class="ft-prod-slider">
+        {% for item in section.blocks %}
+            <div class="ft-product__container page-width">
+                <div class=" ft-prod-fst-div">
+                    {% if item.settings.product.featured_image != null %}
+                        {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'ft-prod-img' %}
+                    {% endif %}
+                </div>  
+                <div class=" ft-prod-lst-div">
+                    <div class="prod-div__container">
+                        {% if item.settings.product != null %}
+                            <div class="prod-div__container__img">
+                                {% if item.settings.product.images[1] != null %}
+                                    {% render 'image', imageSrc: item.settings.product.images[1], classes: 'prod-img' %}
+                                {% else %}
+                                    {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'ft-prod-img' %}
+                                {% endif %}
+                            </div>
+                            <div >
+                                <h2 class="prod-title" >{{ item.settings.product.title }}</h2>
+                                <h3 class="prod-price">{{ item.settings.product.price | money }}</h3>
+                                
+                                <a href="{{ item.settings.product.url }}" class="btn ft-prob-btn">Shop Now</a>
+                            </div>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </section>
+
+
+<script>
+    var ft_prod_slider = new Flickity( '.ft-prod-slider', {
+        prevNextButtons: true,
+        pageDots: false,
+        accessibility: false,
+        wrapAround: true,
+        draggable: true,
+        imagesLoaded: true,
+        percentPosition: true,
+        cellAlign: 'left',
+        contain: true,
+        groupCells: true,
+        adaptiveHeight: true,
+
+    });
+
+    window.onload = function() {
+        ft_prod_slider.resize();
+    }
+</script>
+
+
+
+
+{% schema %}
+    {
+        "name": "Featured Product",
+        "blocks": [
+            {
+                "type": "block",
+                "name": "Heading",
+                "settings": [
+                     {
+                        "type": "image_picker",
+                        "id": "banner_img",
+                        "label": "Banner Image",
+                        "info": "Image size should be 1920 x 1080"
+                    },
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:sections.featured-product.settings.product.label"
+                    }
+                ]
+            }
+        ],
+       
+        "presets": [
+            {
+                "name": "Featured Product Slider"
+            }
+        ]
+    }
+{% endschema %}
