@@ -1,6 +1,7 @@
 {{ 'featured-product-slider.css' | asset_url | stylesheet_tag }}
 
-<section class="ft-product section-margin">
+<section class="ft-product section-margin ">
+    <h2 class="ft-prod-title section-title" > {{ section.settings.ft_prod_title }} </h2>
     <div class="ft-prod-slider">
         {% for item in section.blocks %}
             <div class="ft-product__container page-width">
@@ -8,7 +9,7 @@
                     {% if item.settings.product.featured_image != null %}
                         {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'ft-prod-img' %}
                     {% endif %}
-                </div>  
+                </div>
                 <div class=" ft-prod-lst-div">
                     <div class="prod-div__container">
                         {% if item.settings.product != null %}
@@ -67,18 +68,20 @@
                 "type": "block",
                 "name": "Heading",
                 "settings": [
-                     {
-                        "type": "image_picker",
-                        "id": "banner_img",
-                        "label": "Banner Image",
-                        "info": "Image size should be 1920 x 1080"
-                    },
                     {
                         "type": "product",
                         "id": "product",
                         "label": "t:sections.featured-product.settings.product.label"
                     }
                 ]
+            }
+        ],
+        "settings":[
+            {
+                "type": "text",
+                "id": "ft_prod_title",
+                "label": "Featured Product Title",
+                "default": "Our Featured Product"
             }
         ],
        
