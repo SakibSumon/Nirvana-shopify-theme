@@ -89,6 +89,29 @@
       "settings": {
       }
     },
+    "44a11677-c332-494e-bf29-e3861d8053de": {
+      "type": "featured-product-slider",
+      "blocks": {
+        "265b61ad-4b36-4c30-8b8d-bf7a658fe0b0": {
+          "type": "block",
+          "settings": {
+            "product": "salmon-shirt"
+          }
+        },
+        "6dc54952-57ea-4242-95ee-ac550ae4e965": {
+          "type": "block",
+          "settings": {
+            "product": "charcoal-jeans"
+          }
+        }
+      },
+      "block_order": [
+        "265b61ad-4b36-4c30-8b8d-bf7a658fe0b0",
+        "6dc54952-57ea-4242-95ee-ac550ae4e965"
+      ],
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -255,6 +278,7 @@
   "order": [
     "image_banner",
     "40c1ac49-7924-499c-ba1f-6364b22360b3",
+    "44a11677-c332-494e-bf29-e3861d8053de",
     "rich_text",
     "featured_collection",
     "collage",
