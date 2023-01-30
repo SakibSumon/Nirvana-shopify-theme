@@ -110,6 +110,51 @@
         "6dc54952-57ea-4242-95ee-ac550ae4e965"
       ],
       "settings": {
+        "ft_prod_title": "Our Featured Product"
+      }
+    },
+    "693048b8-15f1-476b-a823-e77f9cc3a9a1": {
+      "type": "collection-slider",
+      "blocks": {
+        "48db56a8-007d-4824-9e97-96e647b53c18": {
+          "type": "collection-slider",
+          "settings": {
+            "collection": "best-selling"
+          }
+        },
+        "de3eb92e-dcb6-4d1c-89fd-d2044cca6aa5": {
+          "type": "collection-slider",
+          "settings": {
+            "collection": "collection1"
+          }
+        },
+        "255d5e32-b38b-47b0-a70d-0a6575416d57": {
+          "type": "collection-slider",
+          "settings": {
+            "collection": "collection15"
+          }
+        },
+        "7207050c-a41f-4f37-9704-b322aada945b": {
+          "type": "collection-slider",
+          "settings": {
+            "collection": "collection18"
+          }
+        },
+        "3920ada0-e2ec-4617-a2eb-904ea7326fc9": {
+          "type": "collection-slider",
+          "settings": {
+            "collection": "collection3"
+          }
+        }
+      },
+      "block_order": [
+        "48db56a8-007d-4824-9e97-96e647b53c18",
+        "de3eb92e-dcb6-4d1c-89fd-d2044cca6aa5",
+        "255d5e32-b38b-47b0-a70d-0a6575416d57",
+        "7207050c-a41f-4f37-9704-b322aada945b",
+        "3920ada0-e2ec-4617-a2eb-904ea7326fc9"
+      ],
+      "settings": {
       }
     },
     "rich_text": {
@@ -279,6 +324,7 @@
     "image_banner",
     "40c1ac49-7924-499c-ba1f-6364b22360b3",
     "44a11677-c332-494e-bf29-e3861d8053de",
+    "693048b8-15f1-476b-a823-e77f9cc3a9a1",
     "rich_text",
     "featured_collection",
     "collage",
