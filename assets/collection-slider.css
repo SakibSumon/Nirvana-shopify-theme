@@ -1,0 +1,33 @@
+.col-slider-cell{
+    padding: 0 16px;
+    width: 24%;
+    margin: 0 16px;
+}
+
+.col-slider{
+    padding: 46px 0;
+}
+
+.col-slider__imgArea{
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+
+.col-slider__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-slider-parent .flickity-button{
+    display: none;
+}
+
+.col-slider-parent .flickity-page-dots{
+    bottom: 0;
+}

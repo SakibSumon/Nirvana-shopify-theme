@@ -14,8 +14,8 @@
 
 .ft-prod-lst-div{
     display: flex;
-    justify-content: start;
-    padding-left: 84px;
+    justify-content:  center;
+    /* padding-left: 84px; */
     align-items: center;
 }
 
@@ -38,11 +38,13 @@
 }
 
 .prod-div__container{
-
+    display: flex;
+    height: 100%;
 }
 
 .prod-div__container__img{
-    height: 60%;
+    /* height: 60%; */
+    height: 90%;
 }
 
 .prod-img{
@@ -68,4 +70,11 @@
     /* font-size: 36px;
     font-weight: 700;
     margin-bottom: 16px; */
+}
+
+.prod-contnt{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-left: 16px;
 }

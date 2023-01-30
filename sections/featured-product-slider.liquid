@@ -20,14 +20,12 @@
                                     {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'ft-prod-img' %}
                                 {% endif %}
                             </div>
-                            <div >
+                            <div class="prod-contnt" >
                                 <h2 class="prod-title" >{{ item.settings.product.title }}</h2>
                                 <h3 class="prod-price">{{ item.settings.product.price | money }}</h3>
-                                
                                 <a href="{{ item.settings.product.url }}" class="btn ft-prob-btn">Shop Now</a>
                             </div>
                         {% endif %}
-                        
                     </div>
                 </div>
             </div>

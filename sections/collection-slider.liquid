@@ -1,0 +1,61 @@
+{{ 'collection-slider.css' | asset_url | stylesheet_tag }}
+
+
+<section class="col-slider-parent page-width">
+    <div class="col-slider">
+         {% for item in section.blocks %}
+            <div class="col-slider-cell">
+                <div class="col-slider__imgArea">
+                    <img class="col-slider__img" src="{{ item.settings.collection.featured_image | img_url: 'large' }}" alt="">
+                </div>
+                <div class="col-slider__content">
+                    <h2>{{ item.settings.collection.title }}</h2>
+                    <a class="btn hero-btn" href="{{ item.settings.collection.url }}">Shop Now</a>
+                </div>
+            </div>        
+        {% endfor %}
+    </div>
+</section>
+
+
+<script>
+var col_slider_flkty = new Flickity('.col-slider', {
+    accessibility: false,
+    adaptiveHeight: true,
+    autoPlay: 2000,
+    cellAlign: 'left',
+    freeScroll: true,
+    wrapAround: true,
+});
+
+window.onload = function() {
+    col_slider_flkty.resize();
+}
+
+
+</script>
+
+{% schema %}
+    {
+        "name": "Collection Slider",
+        "blocks": [
+            {
+                "type": "collection-slider",
+                "name": "Collection Slider",
+                "settings": [
+                    {
+                        "type": "collection",
+                        "id": "collection",
+                        "label": "Collection"
+
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Collection Slider"
+            }
+        ]
+    }
+{% endschema %}
