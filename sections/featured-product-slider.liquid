@@ -2,9 +2,9 @@
 
 <section class="ft-product section-margin ">
     <h2 class="ft-prod-title section-title" > {{ section.settings.ft_prod_title }} </h2>
-    <div class="ft-prod-slider">
+    <div class="ft-prod-slider page-width">
         {% for item in section.blocks %}
-            <div class="ft-product__container page-width">
+            <div class="ft-product__container ">
                 <div class=" ft-prod-fst-div">
                     {% if item.settings.product.featured_image != null %}
                         {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'ft-prod-img' %}

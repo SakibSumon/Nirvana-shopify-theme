@@ -1,0 +1,45 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<section class="about-us section-margin">
+    <div class="abt-us-contnt page-width">
+        <div class="abt-fst-div">
+            {% render 'image', imageSrc: section.settings.abt_lft_img, classes: 'abt-lft-img' %}
+        </div>
+        <div class="abt-us-div">
+            <div class="abt-rght-cntnt">
+                <h2 class="abt-rght-txt">{{ section.settings.abt_rght_txt }}</h2>
+                {% render 'image', imageSrc: section.settings.abt_rght_img, classes: 'abt-rght-img' %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+        "name": "About Us",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "abt_lft_img",
+                "label": "About Left Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "abt_rght_img",
+                "label": "About Right Image"
+            },
+            {
+                "type": "text",
+                "id": "abt_rght_txt",
+                "label": "About Right Text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "About Us"
+            }
+        ]
+    }
+{% endschema %}
+

@@ -1,0 +1,26 @@
+.abt-us-contnt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.about-us{
+    height: 400px;
+}
+
+.abt-fst-div{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60%;
+    padding-right: 60%;    height: 0;
+    width: 0;
+}
+
+.abt-lft-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
