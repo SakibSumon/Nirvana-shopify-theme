@@ -158,6 +158,16 @@
         "col_slider_title": ""
       }
     },
+    "c39cc839-3415-4ac3-ba70-838c380c898c": {
+      "type": "about-us",
+      "settings": {
+        "abt_lft_img": "shopify:\/\/shop_images\/Rectangle_20.png",
+        "abt_rght_img": "shopify:\/\/shop_images\/Rectangle_20_1.png",
+        "abt_rght_title": "About Us",
+        "abt_rght_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "abt_us_url": ""
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -319,16 +329,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "c39cc839-3415-4ac3-ba70-838c380c898c": {
-      "type": "about-us",
-      "settings": {
-        "abt_lft_img": "shopify:\/\/shop_images\/Rectangle_20.png",
-        "abt_rght_img": "shopify:\/\/shop_images\/Rectangle_20_1.png",
-        "abt_rght_title": "About Us",
-        "abt_rght_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-        "abt_us_url": ""
-      }
     }
   },
   "order": [
@@ -336,11 +336,11 @@
     "40c1ac49-7924-499c-ba1f-6364b22360b3",
     "44a11677-c332-494e-bf29-e3861d8053de",
     "693048b8-15f1-476b-a823-e77f9cc3a9a1",
+    "c39cc839-3415-4ac3-ba70-838c380c898c",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn",
-    "c39cc839-3415-4ac3-ba70-838c380c898c"
+    "multicolumn"
   ]
 }
