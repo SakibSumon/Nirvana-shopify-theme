@@ -1,14 +1,19 @@
 {{ 'about-us.css' | asset_url | stylesheet_tag }}
 
 <section class="about-us section-margin">
+    <div class="abt-us-overlay" >&nbsp;</div>
     <div class="abt-us-contnt page-width">
         <div class="abt-fst-div">
             {% render 'image', imageSrc: section.settings.abt_lft_img, classes: 'abt-lft-img' %}
         </div>
         <div class="abt-us-div">
             <div class="abt-rght-cntnt">
-                <h2 class="abt-rght-txt">{{ section.settings.abt_rght_txt }}</h2>
-                {% render 'image', imageSrc: section.settings.abt_rght_img, classes: 'abt-rght-img' %}
+                <h2 class="about-us-title section-title"> {{ section.settings.abt_rght_title }} </h2>
+                <p class="abt-rght-txt">{{ section.settings.abt_rght_txt }}</p>
+                <a class="btn hero-btn abt-btn" href="{{ section.settings.abt_us_url }}"> View Details </a>
+                <div class="abt-rght-imgArea">
+                    {% render 'image', imageSrc: section.settings.abt_rght_img, classes: 'abt-rght-img' %}
+                </div>
             </div>
         </div>
     </div>
@@ -31,8 +36,18 @@
             },
             {
                 "type": "text",
+                "id": "abt_rght_title",
+                "label": "About Right Title"
+            },
+            {
+                "type": "text",
                 "id": "abt_rght_txt",
-                "label": "About Right Text"
+                "label": "Section Title"
+            },
+            {
+                "type": "text",
+                "id": "abt_us_url",
+                "label": "Button URL"
             }
         ],
         "presets": [
