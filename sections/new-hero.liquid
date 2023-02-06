@@ -1,32 +1,11 @@
 {{ 'new-hero.css' | asset_url | stylesheet_tag }}
 
-
-{% comment %} <section class="new-hero">
-
-    <div class="hero-slider">
-        {% for item in section.blocks %}
-            <div class="hero-cell">
-                {% if item.settings.hero_img != null %}
-                        {% render 'image', imageSrc: item.settings.hero_img, classes: 'hero_img' %}
-                    {% else %}
-                        {{ 'lifestyle-1' | placeholder_svg_tag: 'hero_img' }}
-                {% endif %}
-                
-                <div class="hero-content">
-                    <h2 class="hero-title">{{ item.settings.hero_title }}</h2>
-                    <p class="hero-subtitle">  {{ item.settings.hero_subtitle }} </p>
-                    <a class="btn hero-btn" href=" {{ item.settings.hero_button_link }} "> {{ item.settings.hero_button_text }} </a>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-</section> {% endcomment %}
-
-
 <section class="hero">
+    
   <div class="main-carousel" data-speed=".35">
     {% for item in section.blocks %}
         <div class="carousel-cell" >
+            <div class="overlay"> &nbsp; </div>
             {% if item.settings.banner_img != null %}
                     {% render 'image', imageSrc: item.settings.banner_img, classes: 'banner-img' %}
                 {% else %}
@@ -41,6 +20,7 @@
         </div>
     {% endfor %}
   </div>
+  
 </section>
 
 
