@@ -64,6 +64,47 @@
 }
 
 .abt-btn{
-   background-color : #7e7b6b;
+    background-color : #7e7b6b;
     color: #fff;
+}
+
+/* media query for 920px  */
+@media screen and (max-width: 920px){
+    .abt-fst-div{
+        padding-bottom: 82%;
+        padding-right: 92%;
+    }
+
+    .abt-rght-imgArea{
+        padding-bottom: 67%;
+        padding-right: 101%;    
+    }
+}
+
+/* media query for 720px  */
+@media screen and (max-width: 720px){
+    .abt-us-contnt{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .abt-fst-div {
+        padding-bottom: 44%;
+        padding-right: 64%;
+    }
+    
+    .about-us-title{
+        margin-top: 0;
+    }
+
+    .about-us{
+        height: 100%;
+    }
+
+    .abt-rght-imgArea{
+        padding-right: 100%;
+        padding-bottom: 40%;
+
+    }
+
 }
