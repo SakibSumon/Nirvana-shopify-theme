@@ -84,7 +84,7 @@
 
     .ft-product__container{
         grid-template-columns: 1fr;
-        width: 49%;
+        /* width: 49%; */
     }
 
     .ft-prod-lst-div{
@@ -114,3 +114,4 @@
         bottom: -40px;
     }
 }
+
