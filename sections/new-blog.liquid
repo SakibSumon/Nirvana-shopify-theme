@@ -1,0 +1,81 @@
+{{ 'new-blog.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .secnd-div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+</style>
+
+
+<section class="new-blog page-width">
+    <h2 class="section-title"> {{ section.settings.new_blg_title }} </h2>
+    <div class="first-div">
+        <div class="blog-div">
+            <div class="new-blog-imgArea">
+                {% comment %} <img src="{{ section.settings.left_article.image | img_url: 'large' }}" alt=""> {% endcomment %}
+                {% render 'image', imageSrc: section.settings.left_article.image, classes: 'blg-lft-img' %}
+            </div>
+            <div class="new-blog-text">
+                <h3>{{ section.settings.left_article.title }}</h3>
+                <p>{{ section.settings.left_article.content | strip_html | truncatewords: 10 }}</p>
+                <a class="blg-btn" href="{{ section.settings.left_article.url }}">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="secnd-blg-div">
+        {% for item in section.blocks %}
+            <div class="sec-blog-item">
+                <div class="sec-blog-imgArea">
+                    {% comment %} <img src="{{ item.settings.blog.image | img_url: 'large' }}" alt=""> {% endcomment %}
+                    {% render 'image', imageSrc: item.settings.blog.image, classes: 'blg-lft-img' %}
+                </div>
+                <div class="new-blog-text">
+                    <h3>{{ item.settings.blog.title }}</h3>
+                    <p>{{ item.settings.blog.content | strip_html | truncatewords: 7 }}</p>
+                    <a class="blg-btn" href="{{ item.settings.blog.url }}">Read More</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "new-blog",
+        "settings": [
+            {
+                "type": "text",
+                "id": "new_blg_title",
+                "label": "Section Title"
+            },
+            {
+                "type": "article",
+                "id": "left_article",
+                "label": "Select a blog"
+            }
+        ],
+        "max_blocks": 3,
+        "blocks": [
+            {
+                "type": "text",
+                 "name": "New Blog",
+                "settings": [
+
+                    {
+                        "type": "article",
+                        "id": "blog",
+                        "label": "Select a blog"   
+
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "New Blog"
+            }
+        ]
+    }
+{% endschema %}
