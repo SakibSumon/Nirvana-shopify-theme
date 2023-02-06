@@ -9,7 +9,7 @@
 </style>
 
 
-<section class="new-blog page-width">
+<section class="new-blog page-width ">
     <div class="first-div">
         <div class="blog-div">
             <div class="new-blog-imgArea">
@@ -17,8 +17,8 @@
                 {% render 'image', imageSrc: section.settings.left_article.image, classes: 'blg-lft-img' %}
             </div>
             <div class="new-blog-text">
-                <h3>{{ section.settings.left_article.title }}</h3>
-                <p>{{ section.settings.left_article.content | strip_html | truncatewords: 10 }}</p>
+                <h3 class="blg-title">{{ section.settings.left_article.title }}</h3>
+                <p class="blg-content">{{ section.settings.left_article.content | strip_html | truncatewords: 10 }}</p>
                 <a class="blg-btn" href="{{ section.settings.left_article.url }}">Read More</a>
             </div>
         </div>
@@ -31,13 +31,33 @@
                     {% render 'image', imageSrc: item.settings.blog.image, classes: 'blg-lft-img' %}
                 </div>
                 <div class="new-blog-text">
-                    <h3>{{ item.settings.blog.title }}</h3>
-                    <p>{{ item.settings.blog.content | strip_html | truncatewords: 7 }}</p>
+                    <h3 class="blg-title">{{ item.settings.blog.title }}</h3>
+                    <p class="blg-content"> {{ item.settings.blog.content | strip_html | truncatewords: 7 }}</p>
                     <a class="blg-btn" href="{{ item.settings.blog.url }}">Read More</a>
                 </div>
             </div>
         {% endfor %}
     </div>
+</section>
+
+<section class="sml-screen page-width">
+    <div class="sml-blg">
+        {% for item in section.blocks %}
+            <div class="sml-blg-item">
+                <div class="sml-blg-imgArea">
+                    {% comment %} <img src="{{ item.settings.blog.image | img_url: 'large' }}" alt=""> {% endcomment %}
+                    {% render 'image', imageSrc: item.settings.blog.image, classes: 'blg-lft-img' %}
+                </div>
+                <div class="sml-blg-text">
+                    <h3 class="blg-title">{{ item.settings.blog.title }}</h3>
+                    <p class="blg-content">{{ item.settings.blog.content | strip_html | truncatewords: 7 }}</p>
+                    <a class="blg-btn" href="{{ item.settings.blog.url }}">Read More</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
 </section>
 
 {% schema %}
