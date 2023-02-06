@@ -84,6 +84,7 @@
 
     .ft-product__container{
         grid-template-columns: 1fr;
+        width: 48%;
     }
 
     .ft-prod-lst-div{
@@ -106,5 +107,10 @@
 
    .ft-product .flickity-prev-next-button{
         display: none;
+    }
+
+   .ft-product .flickity-page-dots{
+        left: 0;
+        bottom: -40px;
     }
 }
