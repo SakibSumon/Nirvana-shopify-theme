@@ -155,6 +155,7 @@
         "3920ada0-e2ec-4617-a2eb-904ea7326fc9"
       ],
       "settings": {
+        "col_slider_title": ""
       }
     },
     "c39cc839-3415-4ac3-ba70-838c380c898c": {
@@ -343,6 +344,38 @@
         "dscnt_btn": "",
         "mt_200": 160
       }
+    },
+    "0253a6f8-4c91-4e65-beee-3ed7b48c2b39": {
+      "type": "new-blog",
+      "blocks": {
+        "732b9059-1c9f-4b8a-b39f-37d129f98578": {
+          "type": "text",
+          "settings": {
+            "blog": "news\/3rd-odi-ban-vs-zim"
+          }
+        },
+        "f86f3d21-bd34-46ec-9e58-1ab176877309": {
+          "type": "text",
+          "settings": {
+            "blog": "news\/3rd-odi-ban-vs-zim"
+          }
+        },
+        "7f09c4b4-a794-4613-afa3-4a18cc62d20b": {
+          "type": "text",
+          "settings": {
+            "blog": "esports\/csgo"
+          }
+        }
+      },
+      "block_order": [
+        "732b9059-1c9f-4b8a-b39f-37d129f98578",
+        "f86f3d21-bd34-46ec-9e58-1ab176877309",
+        "7f09c4b4-a794-4613-afa3-4a18cc62d20b"
+      ],
+      "settings": {
+        "new_blg_title": "Blog post",
+        "left_article": "news\/3rd-odi-ban-vs-zim"
+      }
     }
   },
   "order": [
@@ -356,6 +389,7 @@
     "collage",
     "video",
     "multicolumn",
-    "7f044d02-23aa-4b2f-8a63-fa940187b4fa"
+    "7f044d02-23aa-4b2f-8a63-fa940187b4fa",
+    "0253a6f8-4c91-4e65-beee-3ed7b48c2b39"
   ]
 }
