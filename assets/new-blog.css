@@ -1,4 +1,8 @@
 .new-blog{
+   
+}
+
+.blg-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -48,7 +52,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 10%;
+    right: 15%;
     bottom: 0;
     border-right: 1px solid #C4C4C4;
     width: 100%;
