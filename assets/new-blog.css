@@ -48,6 +48,10 @@
     position: relative;
 }
 
+.sml-blg-item{
+    position: relative;
+}
+
 .blog-div::after{
     content: "";
     position: absolute;

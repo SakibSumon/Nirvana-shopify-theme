@@ -47,6 +47,7 @@
     <div class="sml-blg">
         {% for item in section.blocks %}
             <div class="sml-blg-item">
+                <a class="blg-anchor-wrap" href="{{ section.settings.left_article.url }}"> &nbsp; </a>
                 <div class="sml-blg-imgArea">
                     {% comment %} <img src="{{ item.settings.blog.image | img_url: 'large' }}" alt=""> {% endcomment %}
                     {% render 'image', imageSrc: item.settings.blog.image, classes: 'blg-lft-img' %}
