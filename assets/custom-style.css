@@ -42,6 +42,18 @@ body, p, h1, h2, h3, h4, h5, h6, span{
     background-color: rgba(0,0,0,0.5);
 }
 
+.prod-mnth-title{
+    margin-bottom: 48px;
+}
+
+.shopify-payment-button__button{
+    background-color: #4E4534 !important;
+}
+
+.product-form__input input[type='radio']:checked + label{
+    outline: .05rem solid black !important;
+}
+ 
 
 /* media query for 480px */
 @media screen and (max-width: 720px){

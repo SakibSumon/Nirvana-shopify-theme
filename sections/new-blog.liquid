@@ -14,8 +14,8 @@
     <div class="blg-container">
         <div class="first-div">
             <div class="blog-div">
+                 <a class="blg-anchor-wrap" href="{{ section.settings.left_article.url }}"> &nbsp; </a>
                 <div class="new-blog-imgArea">
-                    {% comment %} <img src="{{ section.settings.left_article.image | img_url: 'large' }}" alt=""> {% endcomment %}
                     {% render 'image', imageSrc: section.settings.left_article.image, classes: 'blg-lft-img' %}
                 </div>
                 <div class="new-blog-text">
@@ -28,8 +28,8 @@
         <div class="secnd-blg-div">
             {% for item in section.blocks %}
                 <div class="sec-blog-item">
+                     <a class="blg-anchor-wrap" href="{{ section.settings.left_article.url }}"> &nbsp; </a>
                     <div class="sec-blog-imgArea">
-                        {% comment %} <img src="{{ item.settings.blog.image | img_url: 'large' }}" alt=""> {% endcomment %}
                         {% render 'image', imageSrc: item.settings.blog.image, classes: 'blg-lft-img' %}
                     </div>
                     <div class="new-blog-text">

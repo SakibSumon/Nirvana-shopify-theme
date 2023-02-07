@@ -8,6 +8,9 @@
     padding: 46px 0;
 }
 
+.col-slider-parent{
+    padding-bottom: 40px;
+}
 .col-slider__imgArea{
     position: relative;
     padding-bottom: 100%;

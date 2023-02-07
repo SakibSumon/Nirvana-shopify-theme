@@ -59,10 +59,21 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    {% comment %} <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+    </label>  {% endcomment %}
+
+  {% if product.variants[forloop.index0].metafields.custom.color and option.name == 'Color' %}
+  <label class="color-swatch"  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ product.variants[forloop.index0].metafields.custom.color }}; padding: 14px 22px; border-radius: 0; "> 
+  </label>
+{% else %}
+  <label  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    {{ value }}
+  </label>
+{% endif %} 
+
+
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
