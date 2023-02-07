@@ -26,6 +26,7 @@
       "settings": {
         "color_scheme": "background-1",
         "megamenu_image_1": "shopify:\/\/shop_images\/black-coffee-and-a-croissant.jpg",
+        "megamenu_image_2": "shopify:\/\/shop_images\/cozy-livingroom-with-window.jpg",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
