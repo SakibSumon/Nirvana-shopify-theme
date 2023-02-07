@@ -455,8 +455,10 @@
                             {%- endif -%}
                           </li>
                         {%- endfor -%}
-                          {% render 'image', imageSrc: section.settings.megamenu_image_1 , classes: 'mm-image' %}
-                          {% render 'image', imageSrc: section.settings.megamenu_image_1 , classes: 'mm-image' %}
+                         <div class="mm-imgArea">
+                         {% render 'image', imageSrc: section.settings.megamenu_image_1 , classes: 'mm-image' %}
+                          {% render 'image', imageSrc: section.settings.megamenu_image_2 , classes: 'mm-image' %}
+                        </div>
                       </ul>
                     </details>
                   </header-menu>
@@ -849,8 +851,14 @@
     {
       "type": "image_picker",
       "id": "megamenu_image_1",
-      "label": "Megamenu Image"
-
+      "label": "Megamenu Image",
+      "info": "Please upload a vertical image for best results."
+    },
+    {
+      "type": "image_picker",
+      "id": "megamenu_image_2",
+      "label": "Megamenu Image",
+      "info": "Please upload a horizontal image for best results."
     },
     {
       "type": "header",
