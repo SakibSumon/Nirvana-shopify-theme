@@ -58,19 +58,15 @@ body, p, h1, h2, h3, h4, h5, h6, span{
 .new-mm{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: auto !important;
-    gap: 40px;
+    gap: 18px;
     padding-left: 2.4rem !important;
     padding-right: 2.4rem !important;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-    /* min-height: 344px; */
     height: auto;
-
     position: absolute;
     left: 0;
-   
 } 
 
 .mm-submenu{
@@ -88,13 +84,20 @@ body, p, h1, h2, h3, h4, h5, h6, span{
 .mm-imgArea{
     display: flex;
     gap: 20px;
-    width: auto;
+    max-height: 276px;
+    max-width: 600px;
 }
 
 .mm-image{
     height: 100%;
     width: auto;
+    object-fit: cover;
 }
+
+.header__menu-item{
+    font-size: 16px;
+}
+
 
 /* media query for 480px */
 @media screen and (max-width: 720px){
