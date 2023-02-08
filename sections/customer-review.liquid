@@ -1,0 +1,48 @@
+{{ 'customer-review.css' | asset_url | stylesheet_tag }}
+
+<section class="customer-review page-width section-margin">
+    <div class="rev-cell">
+        {% for block in section.blocks %}
+            <div class="rev-cell-item">
+                <div class="rev-img">
+                    {% render 'image', imageSrc: block.settings.image, classes: 'rev-img' %}
+                </div>
+                <div class="rev-content">
+                    <p>{{ block.settings.rev_text }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<script>
+ var rev_cell = new Flickity( '.rev-cell', {
+        
+    });
+
+</script>
+
+
+{% schema %}
+    {
+        "name": "Customer Review",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "rev_text",
+                "label": "Text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Customer Review"
+            }
+        ]
+    }
+{% endschema %}
