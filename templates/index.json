@@ -463,7 +463,9 @@
         "0efa3187-87a8-4058-b946-d1aeb2f7c168": {
           "type": "customer_review",
           "settings": {
-            "rev_text": "",
+            "image_1": "shopify:\/\/shop_images\/Rectangle_20.png",
+            "image_2": "shopify:\/\/shop_images\/black-coffee-and-a-croissant.jpg",
+            "rev_text": "<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <\/p>",
             "rev_author": ""
           }
         },
