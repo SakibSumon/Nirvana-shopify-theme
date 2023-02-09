@@ -235,7 +235,8 @@
         "abt_rght_img": "shopify:\/\/shop_images\/Rectangle_20_1.png",
         "abt_rght_title": "About Us",
         "abt_rght_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-        "abt_us_url": ""
+        "abt_us_url": "",
+        "abt_us_margin_bottom": 160
       }
     },
     "rich_text": {
@@ -446,6 +447,42 @@
         "new_blg_title": "Blog post",
         "left_article": "news\/3rd-odi-ban-vs-zim"
       }
+    },
+    "6fafada4-06b3-42e7-a019-e44e94c23241": {
+      "type": "customer-review",
+      "blocks": {
+        "3a127b08-79fb-4b1b-ae9c-6f0a146918c4": {
+          "type": "customer_review",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/cozy-livingroom-with-window.jpg",
+            "image_2": "shopify:\/\/shop_images\/Frame_40.png",
+            "rev_text": "<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <\/p>",
+            "rev_author": ""
+          }
+        },
+        "0efa3187-87a8-4058-b946-d1aeb2f7c168": {
+          "type": "customer_review",
+          "settings": {
+            "rev_text": "",
+            "rev_author": ""
+          }
+        },
+        "e218bac9-afcc-430c-bd94-141d89b1c4d9": {
+          "type": "customer_review",
+          "settings": {
+            "rev_text": "",
+            "rev_author": ""
+          }
+        }
+      },
+      "block_order": [
+        "3a127b08-79fb-4b1b-ae9c-6f0a146918c4",
+        "0efa3187-87a8-4058-b946-d1aeb2f7c168",
+        "e218bac9-afcc-430c-bd94-141d89b1c4d9"
+      ],
+      "settings": {
+        "cus_rev_title": "Customer Review"
+      }
     }
   },
   "order": [
@@ -461,6 +498,7 @@
     "video",
     "multicolumn",
     "7f044d02-23aa-4b2f-8a63-fa940187b4fa",
-    "0253a6f8-4c91-4e65-beee-3ed7b48c2b39"
+    "0253a6f8-4c91-4e65-beee-3ed7b48c2b39",
+    "6fafada4-06b3-42e7-a019-e44e94c23241"
   ]
 }
