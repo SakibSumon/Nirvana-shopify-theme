@@ -1,5 +1,11 @@
 {{ 'about-us.css' | asset_url | stylesheet_tag }}
 
+<style>
+    .about-us{
+        margin-bottom: {{ section.settings.abt_us_margin_bottom }}px;
+    }
+</style>
+
 <section class="about-us section-margin">
     <div class="abt-us-overlay" >&nbsp;</div>
     <div class="abt-us-contnt page-width">
@@ -48,6 +54,15 @@
                 "type": "text",
                 "id": "abt_us_url",
                 "label": "Button URL"
+            },
+            {
+                "type": "range",
+                "id": "abt_us_margin_bottom",
+                "label": "Margin Bottom",
+                "min": 0,
+                "max": 200,
+                "step": 5,
+                "default": 160
             }
         ],
         "presets": [

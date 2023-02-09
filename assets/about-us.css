@@ -12,6 +12,7 @@
 
 .abt-fst-div{
     position: relative;
+    border-radius: 8px;
     overflow: hidden;
     padding-bottom: 60%;
     padding-right: 60%;   
@@ -31,6 +32,7 @@
 .abt-rght-imgArea{
     margin-top: 28px;
     position: relative;
+    border-radius: 8px;
     overflow: hidden;
     padding-bottom: 38%;
     padding-right: 85%;
