@@ -472,7 +472,9 @@
         "e218bac9-afcc-430c-bd94-141d89b1c4d9": {
           "type": "customer_review",
           "settings": {
-            "rev_text": "",
+            "image_1": "shopify:\/\/shop_images\/bird-image-in-latte-art.jpg",
+            "image_2": "shopify:\/\/shop_images\/Rectangle_20_1.png",
+            "rev_text": "<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <\/p>",
             "rev_author": ""
           }
         }
