@@ -260,9 +260,9 @@
       {{ content_for_layout }}
     </main>
 
-    {% comment %} {% sections 'footer-group' %} {% endcomment %}
-    {% comment %} {% sections 'new-footer' %} {% endcomment %}
-     {% section 'new-footer' %}
+     {% sections 'footer-group' %} 
+     
+    {% comment %} {% section 'new-footer' %} {% endcomment %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
